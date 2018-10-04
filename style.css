@@ -53,3 +53,11 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.form {
+    float: left;
+}
+
+img {
+    width: 70%;
+}
