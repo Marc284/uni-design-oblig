@@ -61,3 +61,12 @@ li.dropdown {
 img {
     width: 70%;
 }
+
+.carDiv {
+    display: inline-block;
+}
+
+.carImg{
+   width: 40em;
+   height: 30em;
+}
