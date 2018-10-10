@@ -62,11 +62,21 @@ img {
     width: 70%;
 }
 
+.carOuterDiv {
+  width: 50em;
+}
 .carDiv {
     display: inline-block;
+    width: 10em;
+    height: 15em;
+    margin-top: 2em;
+    margin-left: 2em;
 }
 
 .carImg{
-   width: 40em;
-   height: 30em;
+  position: relative;
+  display: inline-block;
+  width: 25em;
+  height: 15em;
+  float: right;
 }
