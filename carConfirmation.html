@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HVL Car Rentals</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="import" href="./navbar.html">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+
+    <h1>HVL Car Rentals</h1>
+    <ul class="nav">
+        <li class="dropdown">
+            <a class="dropbtn">Car Hire</a>
+            <div class="dropdown-content">
+              <a href="index.html">Daily Car Hire</a>
+              <a href="carGuide.html">Vehicle Guide</a>
+            </div>
+          </li>
+        <li><a href="error.html">Van Hire</a></li>
+        <li><a href="error.html">Locations</a></li>
+        <li><a href="error.html">Offers</a></li>
+        <li><a href="error.html">Business Hire</a></li>
+        <li><a href="error.html">Products</a></li>
+        <li><a href="error.html">Help</a></li>
+        <li><a href="error.html">Gold Plus Rewards</a></li>
+      </ul>
+
+    <h2>Confirm Your Booking</h2>
+
+
+    <div class="form">
+        <form action="carSuccess.html">
+            Pick-up Location:<br>
+            <input type="text" name="pickup-location" value="Bergen" required>
+            <br>
+            Return Location:<br>
+            <input type="text" name="pickup-location" value="Bergen" required>
+            <br>
+            Pick-up date & time:<br>
+            <input type="date" name="pickup-date" value="2018-10-20" required>
+            <input type="time" name="pickup-time" value="11:00" required>
+            <br>
+            Return date & time<br>
+            <input type="date" name="pickup-date" value="2018-10-24" required>
+            <input type="time" name="pickup-time" value="15:30" required>
+            <br>
+            Hire car type:<br>
+            <select name="cars" required>
+                <option value="">Select vehicle type</option>
+                <option value="van">Van</option>
+                <option value="automatic">Automatic</option>
+                <option value="dream" selected>Dream Collection</option>
+                <option value="family">Family Collection</option>
+                <option value="family">Fun Collection</option>
+                <option value="family">Prestige Collection</option>
+                <option value="family">Green Collection</option>
+                <option value="family">SUVs & 4x4s</option>
+            </select><br><br>
+            <input type="submit" value="Confirm Booking">
+        </form>
+    </div>
+</body>
+
+</html>

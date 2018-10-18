@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-ul {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ ul {
     background-color: #333;
 }
 
-li {
+.nav li {
     float: left;
 }
 
@@ -56,6 +56,7 @@ li.dropdown {
 
 .form {
     float: left;
+    padding: 5px;
 }
 
 img {

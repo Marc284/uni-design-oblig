@@ -12,11 +12,27 @@
 <body>
 
   <h1>HVL Car Rentals</h1>
+  <ul class="nav">
+    <li class="dropdown">
+        <a class="dropbtn">Car Hire</a>
+        <div class="dropdown-content">
+          <a href="index.html">Daily Car Hire</a>
+          <a href="carGuide.html">Vehicle Guide</a>
+        </div>
+      </li>
+    <li><a href="error.html">Van Hire</a></li>
+    <li><a href="error.html">Locations</a></li>
+    <li><a href="error.html">Offers</a></li>
+    <li><a href="error.html">Business Hire</a></li>
+    <li><a href="error.html">Products</a></li>
+    <li><a href="error.html">Help</a></li>
+    <li><a href="error.html">Gold Plus Rewards</a></li>
+  </ul>
 
-  <div w3-include-html="navbar.html"></div>
+  <!-- <div w3-include-html="navbar.html"></div>
   <script>
     w3IncludeHTML();
-  </script>
+  </script> -->
 
   <p>Welcome to HVL Car Rentals! Rent a car online now from one of our worldwide locations. With over 90 years
     experience in car and van rentals, take advantage of our large vehicle rental selection and make your booking
@@ -27,24 +43,21 @@
 
   <div class="form">
     <h2>Book a car</h2>
-    <form action="/action_page.php">
+    <form action="carConfirmation.html">
       Pick-up Location:<br>
-      <input type="text" name="pickup-location">
+      <input type="text" name="pickup-location" required>
       <br>
       Pick-up date & time:<br>
-      <input type="date" name="pickup-date">
-      <input type="time" name="pickup-time">
+      <input type="date" name="pickup-date" required>
+      <input type="time" name="pickup-time" required>
       <br>
       Return date & time<br>
-      <input type="date" name="pickup-date">
-      <input type="time" name="pickup-time">
-      <br>
-      Your age at time of pick-up:<br>
-      <input type="number" name="pickup-time">
+      <input type="date" name="pickup-date" required>
+      <input type="time" name="pickup-time" required>
       <br>
       Hire car type:<br>
-      <select name="cars">
-        <option disabled selected>Select vehicle type</option>
+      <select name="cars" required>
+        <option value="">Select vehicle type</option>
         <option value="van">Van</option>
         <option value="automatic">Automatic</option>
         <option value="dream">Dream Collection</option>
@@ -54,7 +67,8 @@
         <option value="family">Green Collection</option>
         <option value="family">SUVs & 4x4s</option>
       </select><br><br>
-      <input type="button" onclick="window.location='./carBook.html'" value='Book a vehicle'>
+      <input type="submit" value='Book a vehicle'>
+      <!-- <input type="button" onclick="window.location='./carBook.html'" value='Book a vehicle'> -->
     </form>
   </div>
 
