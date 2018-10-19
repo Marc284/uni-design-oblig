@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>HVL Car Rentals</title>
@@ -29,11 +29,6 @@
     <li><a href="error.html">Gold Plus Rewards</a></li>
   </ul>
 
-  <!-- <div w3-include-html="navbar.html"></div>
-  <script>
-    w3IncludeHTML();
-  </script> -->
-
   <p>Welcome to HVL Car Rentals! Rent a car online now from one of our worldwide locations. With over 90 years
     experience in car and van rentals, take advantage of our large vehicle rental selection and make your booking
     online instantly. With all the best offers and deals on car rental on the website right now, and the option to pay
@@ -46,6 +41,9 @@
     <form action="carConfirmation.html">
       Pick-up Location:<br>
       <input type="text" name="pickup-location" required>
+      <br>
+      Return Location:<br>
+      <input type="text" name="return-location" required>
       <br>
       Pick-up date & time:<br>
       <input type="date" name="pickup-date" required>
@@ -68,7 +66,6 @@
         <option value="family">SUVs & 4x4s</option>
       </select><br><br>
       <input type="submit" value='Book a vehicle'>
-      <!-- <input type="button" onclick="window.location='./carBook.html'" value='Book a vehicle'> -->
     </form>
   </div>
 
